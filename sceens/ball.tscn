@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cobbmw13iayay"]
+
+[ext_resource type="Texture2D" uid="uid://d33uv1j48i5nl" path="res://sprites/Union.png" id="1_jkmxs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dgfsc"]
+radius = 21.023796
+
+[node name="Ball" type="RigidBody2D" unique_id=1632036329]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1600852793]
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(0.28767124, 0.30714285)
+texture = ExtResource("1_jkmxs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=639183776]
+shape = SubResource("CircleShape2D_dgfsc")
